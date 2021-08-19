@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: "Cardo", serif;
+  background: #333;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/*Apply the GOOGLE fonts*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+/*Initialise the GRID*/
+
+.grid {
+  display: grid;
+}
+
+/*Navbar list*/
+
+.grid > nav > ul {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr;
+  height: 50px;
+  list-style-type: none; /*Removes bullet points*/
+  text-align: center;
+  background-color: lightgray;
+  height: fit-content;
+  margin: 0px;
+  padding: 20px;
+  font-size: 0.8em;
+}
+
+/*Small burrito in nav*/
+
+#smallBurrito {
+  justify-self: left; /*THIS DOES NOTHING - HELP PLZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ*/
+  margin-bottom: 5px;
+}
+
+/* Welcome header*/
+
+#header {
+  min-height: 450px;
+  text-align: center;
+}
+
+/*Image under the header*/
+
+.bg-image {
+  position: absolute;
+  background: #333 url(images/headerBackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 507px;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/*Text within header*/
+
+.headerContent {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+/*Setup of all burritos section*/
+
+.venues {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  height: max-content;
+  border: 2px solid #fff;
+  margin: 10px;
+  align-self: stretch;
+}
+
+.underVenue {
+  position: absolute;
+  background: #333 url(images/selections.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  padding: 0;
+  margin-bottom: 200px;
+  /*WHYYYYY DOES THIS LEAVE A BIT AT THE BOTTOM?????????????????????????????????????????????????????????????????????????????????????????????*/
+}
+
+#tgah1 {
+  padding: 10px;
+  padding-top: 0;
+}
+
+/*Removes purple from hyperlink, creates an action when you hover*/
+.venues a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.venues a:hover {
+  background: lightgrey;
+  color: #fff;
+  opacity: 0.5;
+}
+
+/*Top 3 section*/
+
+.picks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+#topPhoto {
+  opacity: 0.5;
+  width: 100%;
+}
+
+/*Footer*/
+
+#footer {
+  background-color: lightgrey;
+  text-decoration: none;
+  height: 50px;
+}
+
+/*Media query for screens over 700px wide*/
+
+@media (min-width: 700px) {
+  .venues {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .underVenue {
+    background-size: cover;
+    position: absolute;
+    margin-bottom: 200px;
+    object-fit: fill; /*WHYYYYY DOES THIS NOT FILL UP ALL THE WAY???????????????????????????????????????????????????????????????????????????????????????????????????*/
+  }
+
+  .picks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

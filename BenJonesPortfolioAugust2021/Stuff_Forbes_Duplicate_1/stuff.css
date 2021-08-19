@@ -1,0 +1,47 @@
+.surface {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.minisection hr {
+  color: lightgray;
+}
+
+.body h4 {
+  font-weight: bold;
+}
+
+h5 {
+  color: lightgray;
+}
+
+@media (min-width: 800px) {
+  .surface {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .minisection {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 200%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .surface {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .minisection {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 200%;
+  }
+}

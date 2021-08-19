@@ -1,0 +1,147 @@
+body {
+  font-family: "Newsreader", serif;
+}
+
+/* Get the top banner and logo to fit in screen */
+
+#topbanner {
+  width: 100%;
+  display: inline-block;
+}
+
+#covidLogo {
+  width: 30%;
+  display: inherit;
+  float: left;
+}
+/* get menu to the right */
+.bannermenu {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+/* hide search and links in mobile mode */
+#search {
+  display: none;
+  width: 25%;
+}
+
+.bannermenu a {
+  display: none;
+}
+
+.bannermenu button {
+  float: right;
+  background-color: lightblue;
+  border: none;
+  padding: 1.5%;
+  font-size: 16px;
+}
+
+/* happy people photo */
+
+.happypeople {
+  clear: both;
+  width: 100%;
+}
+
+/* print/share links */
+
+a {
+  text-decoration: none;
+  color: rgb(80, 77, 77);
+  padding-right: 10%;
+}
+
+/* BOPDHB image  */
+
+#BOPDHB {
+  width: 60%;
+  padding-left: 20%;
+}
+
+/* mapbox */
+.insidemap {
+  background-color: rgb(241, 221, 213);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* main content box */
+
+.mainbox {
+  border: 4px solid rgb(158, 135, 177);
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.mainbox button {
+  border: none;
+  padding: 1.5%;
+  font-size: 16px;
+  background-color: rgb(158, 135, 177);
+  color: white;
+}
+
+/* for larger screens */
+@media (min-width: 600px) {
+  /* banner area */
+  .bannermenu {
+    text-align: center;
+    display: inline;
+  }
+
+  #search {
+    display: inherit;
+  }
+
+  .bannermenu a {
+    display: inherit;
+  }
+
+  #covidLogo {
+    width: 30%;
+    display: inherit;
+  }
+
+  #BOPDHB {
+    width: 60%;
+    padding-left: 20%;
+  }
+
+  /* sidebar */
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis;
+  }
+
+  .insidemap {
+    border-radius: 10px;
+  }
+
+  /* mapbox */
+
+  .mapBox {
+    width: 90%;
+  }
+
+  #googlemap {
+    width: 100%;
+  }
+
+  /* main info box */
+  .mainbox {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .powerflex {
+    display: flex;
+  }
+}

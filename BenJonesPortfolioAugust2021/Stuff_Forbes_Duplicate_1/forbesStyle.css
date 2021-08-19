@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap");
+
+/* Style the very top navigation menu */
+
+.topnav {
+  background-color: black;
+  display: grid;
+  color: white;
+  height: min-content;
+}
+
+.topnav h1 {
+  text-align: right;
+  padding-right: 0.4em;
+}
+
+#hamburg {
+  padding-left: 0.4em;
+  font-size: 2em;
+}
+
+/*Top Grid to rule them all*/
+
+.topgrid {
+  display: grid;
+  font-family: "Alike Angular", serif;
+  display: inline-block;
+}
+
+/*Style the heading text within top grid*/
+
+.head {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#imageAlign {
+  display: grid;
+  grid-template-columns: 0.15fr 4fr;
+}
+
+.article {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}

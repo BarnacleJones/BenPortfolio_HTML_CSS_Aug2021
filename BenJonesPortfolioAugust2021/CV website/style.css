@@ -1,0 +1,45 @@
+.profilePhoto {
+  width: 150px;
+  border-radius: 60px;
+  float: left;
+  margin-right: 10px;
+  outline-color: black;
+  outline-style: dotted;
+}
+
+.username {
+  font-weight: bold;
+  font-size: larger;
+}
+
+p {
+  font-style: normal;
+  font-variant: normal;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  font-style: normal;
+  font-variant: normal;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.sat {
+  width: 350px;
+  border-radius: 155;
+  float: left;
+
+  margin-right: 10px;
+  outline-color: black;
+  outline-style: dotted;
+}
+body {
+  background-image: url(images/background2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.center{
+  width: 70%;
+  margin: auto;;
+}

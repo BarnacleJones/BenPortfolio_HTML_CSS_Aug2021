@@ -1,0 +1,65 @@
+/*Google font import*/
+
+body {
+  font-family: "Eczar", serif;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Different background image depending on window*/
+
+@media only screen and (max-width: 562px) {
+  body {
+    background-image: url(images/background/background-small-562.jpg);
+  }
+}
+
+@media only screen and (min-width: 563px) {
+  body {
+    background-image: url(images/background/background-medium-844.jpg);
+  }
+}
+
+@media only screen and (min-width: 1125px) {
+  body {
+    background-image: url(images/background/background-large-1125.jpg);
+  }
+}
+
+@media only screen and (min-width: 3889px) {
+  body {
+    background-image: url(images/background/background-original-3889.jpg);
+  }
+}
+
+/*Working with the lefthand grid*/
+
+.grid-container-left {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 15%;
+  opacity: 0.6;
+  border: 3px dotted rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.FixedBox {
+  font-size: 30px;
+}
+
+.AboutMeSection {
+  border: 3px dotted rgba(0, 0, 0, 0.8);
+  width: 70%;
+  background-color: #c7b09c;
+  opacity: 0.8;
+}
+
+.AboutMeSection,
+.grid-container-left {
+  float: left;
+  margin: 10px;
+}

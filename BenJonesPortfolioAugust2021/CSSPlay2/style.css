@@ -1,0 +1,77 @@
+/* Getting font-y */
+
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap");
+
+body {
+  font-family: "Lora", serif;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header formatting */
+
+header {
+  display: inline-flex;
+  /* doing just flex made the image bigger - inline must fit it to fit with other flex items */
+}
+
+header ul {
+  display: flex;
+
+  gap: 50px;
+  list-style: none;
+}
+
+/* Colours */
+.page {
+  background-color: rgb(179, 223, 179);
+  margin: 0 auto;
+  float: right;
+}
+
+footer {
+  background-color: grey;
+}
+
+/* flex section play */
+
+.flex {
+  display: flex;
+
+  flex: 1 1 25px;
+}
+
+.flex img {
+  max-width: 50%;
+}
+
+/* grid section */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+
+.grid img {
+  max-width: 50%;
+}
+
+.grid .item3 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+hr {
+  width: 75%;
+}
+
+footer {
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  clear: both;
+}

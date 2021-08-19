@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google Font Import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet"> 
+
+    <!--Link to stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <title>HTML essentials</title>
+
+</head>
+
+<body>
+    <a href="../index.html">GO BACK TO MAIN PAGE
+    <h1>HTML Reference Page</h1>
+    <br>
+    <br>
+    
+    <div class="col-1">
+    <h2>Formatting Text</h2>
+    <h3>Paragraphs</h3>
+    <p>To put in a paragraph tag - insert <code>&ltp&gt"Text goes here"&lt/p&gt</code></p>
+    <h3>Headlines</h3>
+    <p>To put in a headline tag - insert
+        <code>&lth1&gt"Insert text ( headlines vary in size -h1, h2, h3....h6)&lt/h1&gt</code>
+    </p>
+    <h3>Bold, emphasis and italics</h3>
+    <p>To bold text - &ltb&gt"Text to Bold"&lt/b&gt</p>
+    <p>To stress importance/urgency - &ltstrong&gt"Text to make important"&lt/strong&gt </p>
+    <p>To put emphasis on text -&ltem&gt"Emphasised text"&lt/emg&gt</p>
+    <p>To italisise text - &lti&gt"Text"&lti&gt</p>
+    <h3>Lists</h3>
+    <p>You can have lists that are ordered, and unordered</p>
+    <p>&ltul&gt&lt/ul&gt - list with bullet points</p>
+    <p>&ltol&gt&lt/ol&gt - lists with numbers</p>
+    <p>To insert items in a list - &ltli&gt"List text"&lt/li&gt</p>
+    <p>Here is an example of an unordered list</p>
+    <ul>List example:</ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <h3>Quotes</h3>
+    <p>To insert quotes - &ltblockquote&gt "This is the text of the quote" &ltcite&gt"Name of
+        quotee"&lt/cite&gt&lt/blockquote&gt </p>
+    <p>Example quote</p>
+    <blockquote>Fuck the police <cite>-N.W.A.</cite></blockquote>
+    <p>You can also put a quote inline with the text with the &ltq&gt"Quote"&lt/q&gt</p>
+    <h3>Dates and times</h3>
+    <p>You can make a time with a &lttime&gt tag</p>
+    <p>You can also specify the time/day format for accessibility with the &ltdatetime ="2025-05-08&gt</p>
+    <p>Here is the datetime tag in action: <time datetime="2021-07-01">2021-07-01</time></p>
+    <h3>Code</h3>
+    <p>Insert reference to code in your HTML</p>
+    <p>&ltcode&gt tags will create: <code>int num1 = 52</code></p>
+    <h3>Pre and Br</h3>
+    <p>The &ltpre&gt&lt/pre&gt will allow you to show a block with spacing included</p>
+    <p>The &ltbr&gt is simply a break in the page - no need to close tag this one</p>
+    <h3>Superscripts and subscripts</h3>
+    <p>A superscript is used with &ltsup&gt&lt/sup&gt to show something like <sup>this</sup></p>
+    <p>A subscripts is used with &ltsub&gt&lt/sub&gt to show something like <sub>this</sub></p>
+    <h3>HTML Debugging/HTML attributes/ARIA roles/Formatting HTML</h3>
+    <p>HTML debugging - you are able to refer to other websites (or your own) by right clicking on your browser and push
+        inspect page. <br> There is a lot of good information here, have a play! Also great for CSS. Plus the changes are live.</p>
+    <p><a href="https://www.w3schools.com/html/html_attributes.asp">Read here about the different types of HTML
+            attributes</a></p>
+    <a href="https://www.w3schools.com/html/html_accessibility.asp">This W3Schools page goes into good practice for
+        accessibility in your website</a>
+    <h3>Linking and navigation</h3>
+    <p>To link, use the &lta href="link url or file location"/a></p>
+    </div>
+
+
+    <div class = "col-2">
+    <h2>Images and graphics</h2>
+    <p>To insert an image - &ltimg src="url or filepath" alt="alt text" "width=300" "height = 300"&gt</p>
+    <p>There are 4 main image formats at the time of writing</p>
+    <li><b>Gif</b> - limited colours (256) good at compressing large areas of single colour - pixelates photographs</li>
+    <li><b>SVG</b> - good for icons, logos, a vector file (programming language) so can scale quite large</li>
+    <li><b>JPG</b> - great for photos, just specify size, can be compressed</li>
+    <li><b>PNG</b> - images that need transparency</li>
+    <h3>Responsive Images</h3>
+    <p>To use responsive images (images that will scale depending on internet connection, type of device, etc you will
+        need to use CSS</p>
+    <a href="https://www.w3schools.com/css/css_rwd_images.asp">This page will go into further detail. Very good
+        practice!</a>
+    <h3>Figures and figure captions</h3>
+    <p>Use the &ltfigure&gt&lt/figure&gt tag</p>
+    <p>To caption your figure - use &ltfigcaption&gt&lt/figcaption&gt within the figure tag</p>
+    <figure>Here is an example figure<figcaption>-The caption goes here</figcaption>
+    </figure>
+    </div>
+
+
+    <div class="col-3">
+    <h2>Media</h2>
+    <p>To insert <b>audio</b> in your page - use the &ltaudio&gt tag</p>
+    <p>Specify the source as well, and use 'controls' so that you can play and pause the audio -<br> &ltaudio controls
+        src="audio/1 - The River.mp3">&lt/audio></p>
+    <p>To insert a <b>video</b> use the &ltvideo&gt tag and you will need to include the src="" and type="" attributes
+    </p>
+    <p>If you are inserting a youtube video you can use the 'embed' link (click share video for this) and simply copy
+        that into your code</p>
+    <p>This will use iFrames to specify an inline frame</p>
+    <p>Please refer to this page on iFrames when the time comes: <a
+            href="https://www.w3schools.com/tags/tag_iframe.ASP">iFrames w3 Schools</a></p>
+        </div>
+        <div class="MoreInfo">
+    <h2>Identifying content</h2>
+    <p>Supporting languages:</p>
+    <p>You are able to specify the language you are using</p>
+    <p>In the head section just put &lthtml lang="en-US" or "en-GB"&gt to specify which language you are using.</p>
+    <p>You can also specify (in the head section) which direction the text reads - LTR or RTL</p>
+    <p>&ltdir ltr &gt</p>
+    <h4>Div vs span</h4>
+    <p>The &ltdiv&gt tag is a block level element (starts a new line and takes up full width)</p>
+    <p>The &ltspan&gt tag is an inline element (in line means just marks up a part of text, not whole line)</p>
+    <a href="https://www.w3schools.com/html/html_blocks.asp">Please refer to the W3Schools page for div and span
+        information!</a>
+    <p>These are easily styled by CSS. DIV is used as a container for HTML elements which you can then style</p>
+</div>
+
+
+<div class="col-4">
+    <h2>Putting it all together</h2>
+    <p>Each HTML page has a specified layout that includes head (information for browser), body(information displayed on
+        the webpage)</p>
+    <p>You can have Visual Studio code format the basics of your page using '! + Tab' when you first make your html
+        document</p>
+    <p>This will include the doctype, html, head, body and their respective closing tags</p>
+</div>
+
+
+<div class="col-5">
+    <h2>Forms</h2>
+    <p>To create a form follow this code. </p>
+    <p>
+        &ltform action="actionpage.php" method="get">&lt/form><br>
+        &ltlabel for="fname">Name&lt/label><br>
+        &ltinput type="text" id='fname'><br>
+        &ltlabel for="actionpage.php">Email&lt/label><br>
+        &ltinput type="email"><br>
+        &ltinput type="submit" value="Submit"><br>
+    </p>
+    <p>Example form (with additional checkbox):</p>
+    <form action="success.html" method="get"></form>
+    <label for="success.html">Name</label>
+    <input type="text">
+    <label for="success.html">Email</label>
+    <input type="email">
+    <input type="submit" value="Submit">
+    <input type="checkbox">
+    <label for="success.html">Tick this</label>
+    
+</div>
+
+
+<div class="col-6">
+    <h2>Tables</h2>
+    <p>To make a table use the following code which will produce the example below:</p>
+    <p>
+        &lttable><br>
+        &lttr><br>
+        &ltth>Month&lt/th><br>
+        &ltth>Savings&lt/th><br>
+        &lt/tr><br>
+        &lttr><br>
+        &lttd>January&lt/td><br>
+        &lttd>$100&lt/td><br>
+        &lt/tr><br>
+        &lttr><br>
+        &lttd>February&lt/td><br>
+        &lttd>$150&lt/td><br>
+        &lt/tr><br>
+        &lt/table><br>
+        <br>
+        <br>
+        &lttable>- will initialise the table.
+        <br>
+        &lttr>- is for defining a new row
+        <br>
+        &ltth> - defines the table header.
+        <br>
+        &lttd> - defines the table data.
+
+
+
+    </p>
+    <table>
+        <tr>
+            <th>Month</th>
+            <th >Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$150</td>
+        </tr>
+    </table>
+</div>
+
+
+</body>
+
+</html>
